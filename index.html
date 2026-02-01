@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Iron Niti - Strategy & Mastery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo-group">
+            <img src="iron_lady_3d_logo.png" alt="Iron Niti Logo" class="nav-logo">
+            <span class="nav-brand">Iron Niti</span>
+        </div>
+        <nav class="main-nav">
+            <a href="#programs">Programs</a>
+            <a href="#philosophy">Philosophy</a>
+            <a href="#mentorship">Mentorship</a>
+            <a href="#about">About</a>
+        </nav>
+        <div class="auth-buttons">
+            <button class="btn-signin">Sign In</button>
+            <button class="btn-signup">Sign Up</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="logo-wrapper-hero">
+                    <!-- Hero Logo Removed as it is now in Nav, or kept if design dictates. Screenshot shows large title but maybe not logo? 
+                         Screenshot shows "The Iron Niti" text large. Let's keep the title. -->
+                    <h1 class="main-title">The Iron Niti</h1>
+                </div>
+                <p class="description-text">
+                    Stop settling for "balance" and start striving for breakthroughs. At Iron Lady, we equip ambitious
+                    women with the tactical edge needed to navigate corporate politics, overcome systemic biases, and
+                    claim their seat at the table. Join an ecosystem of over 78,000 women leaders who are transforming
+                    their potential into measurable success.
+                </p>
+                <div class="assistant-trigger">
+                    <div class="command-input-wrapper">
+                        <input type="text" id="sakhi-text-input" placeholder="Ask Sakhi about your career battle...">
+                        <button id="send-command" class="send-btn">Consult</button>
+                    </div>
+                    <div class="quick-actions">
+                        <button class="action-chip" data-cmd="strategy">Daily Strategy</button>
+                        <button class="action-chip" data-cmd="wisdom">Wisdom</button>
+                        <button class="action-chip" data-cmd="programs">Iron Lady Programs</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="animation-container">
+                <dialog open id="orb"></dialog>
+                <h1 data-splittext id="spinning-text">Iron Lady </h1>
+            </div>
+        </section>
+
+        <!-- New Programs Carousel Section -->
+        <section class="programs-carousel" id="programs">
+            <div class="carousel-track">
+                <div class="program-card card-1">
+                    <h3>Leadership Essentials</h3>
+                    <p>Master the art of Shameless Pitching and office influence.</p>
+                </div>
+                <div class="program-card card-2">
+                    <h3>100 Board Members</h3>
+                    <p>Strategic preparation for your seat at the boardroom table.</p>
+                </div>
+                <div class="program-card card-3">
+                    <h3>Business Warfare</h3>
+                    <p>Tactics for the ₹1 Crore+ income band and C-Suite dominance.</p>
+                </div>
+            </div>
+            <div class="carousel-progress">
+                <div class="progress-bar"></div>
+                <div class="progress-dot"></div>
+            </div>
+        </section>
+
+        <!-- Philosophy Section -->
+        <section id="philosophy" class="section-padding bg-light">
+            <div class="section-header">
+                <h2>The Iron Niti Philosophy</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="philosophy-content">
+                <div class="phil-card">
+                    <h3>Business Warfare</h3>
+                    <p>Stop settling for "balance" and start striving for breakthroughs. In the corporate battlefield,
+                        nice girls finish last. Iron Ladies win by claiming their space with unapologetic ambition.</p>
+                </div>
+                <div class="phil-card">
+                    <h3>Strategic Winning</h3>
+                    <p>Struggling or 'balancing' is a sign your current tactics are outdated. You need to shift to
+                        'Strategic Winning'. Our programs teach you the Iron Protocol to dominate the workplace without
+                        sacrifice.</p>
+                </div>
+                <div class="phil-card">
+                    <h3>Unconditional Authority</h3>
+                    <p>Ambition is not a fault; it is your greatest asset. Develop the "Indian Professional Authority"
+                        to speak with conviction and command the respect you deserve in the boardroom.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mentorship Section -->
+        <section id="mentorship" class="section-padding">
+            <div class="section-header">
+                <h2>Mentored by Giants</h2>
+                <p class="subtitle">Learn from leaders who have mastered the art of war.</p>
+                <div class="divider"></div>
+            </div>
+            <div class="mentors-grid">
+                <div class="mentor-card">
+                    <div class="mentor-img-placeholder"
+                        style="background: linear-gradient(135deg, #FF6B6B 0%, #556270 100%);">RB</div>
+                    <h3>Rajesh Bhat</h3>
+                    <span class="role">Founder</span>
+                    <p>The visionary behind the Iron Lady movement, bringing "Business War" tactics to women leadership.
+                    </p>
+                </div>
+                <div class="mentor-card">
+                    <div class="mentor-img-placeholder"
+                        style="background: linear-gradient(135deg, #403B4A 0%, #E7E9BB 100%);">SH</div>
+                    <h3>Suvarna Hegde</h3>
+                    <span class="role">CEO</span>
+                    <p>Leading the charge with strategic dominance, embodying the transition from struggle to success.
+                    </p>
+                </div>
+                <div class="mentor-card">
+                    <div class="mentor-img-placeholder"
+                        style="background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);">SN</div>
+                    <h3>Simon Newman</h3>
+                    <span class="role">Global Expert</span>
+                    <p>Former CEO of Aviva, bringing global corporate wisdom and execution strategies to the program.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section-padding bg-light-alt">
+            <div class="about-wrapper">
+                <div class="about-text">
+                    <h2>About Iron Lady</h2>
+                    <p>We are not just a coaching program; we are a movement. With over 78,000 women leaders, we are the
+                        largest ecosystem dedicated to transforming professional women into "Iron Ladies" who command
+                        C-Suite positions and earn what they deserve.</p>
+                    <p>Our "Iron Protocol" is the battlefield manual for the modern woman leader.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sakhi Modal/Overlay -->
+        <div id="sakhi-overlay" class="aura-overlay hidden">
+            <div class="aura-content">
+                <div class="visualizer-container">
+                    <canvas id="visualizer"></canvas>
+                    <div class="aura-orb"></div>
+                </div>
+                <div id="sakhi-status" class="aura-status">Sakhi is Listening...</div>
+                <div id="sakhi-transcript" class="aura-transcript"></div>
+                <button id="close-sakhi" class="close-btn">&times;</button>
+            </div>
+        </div>
+    </main>
+    <script src="sakhi_logic.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
